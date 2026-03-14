@@ -4,7 +4,7 @@ def main():
 
     with open("output.txt", "w", encoding="utf-8") as file_out:
         for line in text:
-            if line:
+            if line.strip():
                 file_out.write(line[0])
 
 
